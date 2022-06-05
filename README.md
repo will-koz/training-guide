@@ -6,6 +6,13 @@ at [SWCC GUIDE](https://www.sealswcc.com/training/navy-seal-swcc-physical-traini
 weeks prior to week 26 use Example 1; even weeks prior to week 27 use Example 2; odd weeks after
 week 26 use Example 3; and even weeks after week 27 use Example 4.
 
+## Building
+
+The guide can be built using the command `make`. Cross training is something that should be done
+everyday, according to the guide, but does not need to be done twice a day. Reps (i.e. push ups,
+situps, and pull ups) can be done twice a day. First, as part of that day's reps, and second as part
+of that week's reps. Both of these can be edited in [custom.c](custom.c).
+
 ## Running
 
 Currently, the guide is run using `./guide`, followed by the week and the day. A valid utilization
