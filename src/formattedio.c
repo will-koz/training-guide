@@ -14,7 +14,7 @@ int iof (int formatting, const char* format, ...) {
 	if (formatting & FORMAT_BLUE) printf("\033[34m");
 	if (formatting & FORMAT_GREN) printf("\033[32m");
 	if (formatting & FORMAT_REDX) printf("\033[31m");
-	if (formatting & FORMAT_GRAY) printf("\033[90m");
+	if (formatting & FORMAT_GRAY) printf("\033[38:5:250m");
 
 	va_start(arg, format);
 	done = vfprintf(stdout, format, arg);

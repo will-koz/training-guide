@@ -33,4 +33,6 @@ void run_dump (exact_day* target_day) {
 	printf(IO_DATEREQUESTED, nowstruct->tm_year + 1900,
 		(nowstruct->tm_mon >= 9) ? "" : "0", nowstruct->tm_mon + 1,
 		(nowstruct->tm_mday >= 10) ? "" : "0", nowstruct->tm_mday);
+
+	printf(IO_FROMURL, IO_URL);
 }

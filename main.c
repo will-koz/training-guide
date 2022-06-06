@@ -33,8 +33,8 @@ int main (int argc, char** argv) {
 
 	run_dump(&working_day); // Print out information about the target day and the day of the request
 
-	output_day_schedule(exact_day_schedule);
-	output_reps();
+	if (output_day_schedule(exact_day_schedule)) output_cross_training(1);
+	output_daily_reps();
 
 	return 0;
 }
