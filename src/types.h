@@ -5,7 +5,7 @@
 typedef enum { Monday, Tuesday, Wednesday, Thursday, Friday, Saturday, Sunday } week_day;
 
 typedef enum {
-	CROSS_TRAIN = 1, LIFT, PSP, RUN_LI, RUN_LSD, RUN_SI, SWIM_LI, SWIM_SI, SWIM_LSD
+	CROSS_TRAIN = 1, LIFT, PSP, RUN_LI, RUN_LSD, RUN_SI, SWIM_LI, SWIM_LSD, SWIM_SI
 } workout_type;
 
 typedef enum {
@@ -18,6 +18,12 @@ typedef struct {
 	unsigned int week;
 	week_day day;
 } exact_day;
+
+typedef struct {
+	char* verb;
+	int quantity;
+	char* unit;
+} exercise;
 
 typedef struct {
 	workout_type type;
