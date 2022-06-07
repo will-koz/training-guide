@@ -16,6 +16,10 @@ exercise repititions[] = {
 	(exercise) {"Do", 40, "push-ups"}
 };
 
+// Change this to a lower value for an easier psp workout or higher for harder.
+// 0.50 is recommended because it is the middle, and 1.00 is on the higher end of recommended
+float psp_structure = 1.00;
+
 // Each week can change in intensity, and some people advance at different rates. Change each of
 // these to get the right push up, sit up, and pull up intensities for you.
 int push_up_intensity[27] = {

@@ -1,3 +1,4 @@
+#include <math.h>
 #include <stdarg.h>
 #include <stdio.h>
 #include <stdlib.h>
@@ -7,12 +8,15 @@
 #include "src/types.h"
 
 #include "custom.c"
-#include "data/week_schedule.c"
+#include "data/rep-tables.c"
+#include "data/week-schedule.c"
 #include "src/formattedio.h"
+#include "src/math.h"
 
 #include "conf.c"
 #include "src/dump.c"
 #include "src/formattedio.c"
+#include "src/math.c"
 #include "src/output.c"
 #include "src/parse-arguments.c"
 
@@ -33,7 +37,7 @@ int main (int argc, char** argv) {
 
 	run_dump(&working_day); // Print out information about the target day and the day of the request
 
-	if (output_day_schedule(exact_day_schedule)) output_cross_training(1);
+	if (output_day_schedule(exact_day_schedule, working_day.week)) output_cross_training(1);
 	output_daily_reps();
 
 	return 0;

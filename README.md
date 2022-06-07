@@ -23,3 +23,5 @@ also use characters from `MTWtHFSsU` format, so `./guide 7 U` would give the sam
 ## TODO
 
 TODO is kept in [txt/TODO.md](txt/TODO.md).
+
+![One handed pull-up](images/one-handed-pull-up.png)

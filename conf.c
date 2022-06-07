@@ -8,6 +8,11 @@
 #define STRING_HEADING "%s:\n"
 #define STRING_REPS "Repititions:\n"
 
+#define VERB_DO "Do"
+#define UNIT_PULLUP "pull-ups"
+#define UNIT_PUSHUP "push-ups"
+#define UNIT_SITUP "sit-ups"
+
 // For days of the week and workout names, look src/types.h too because they are tied together
 char days_of_the_week_char[] = { 'M', 'T', 'W', 'H', 'F', 'S', 'U' };
 char* days_of_the_week_string[] = {

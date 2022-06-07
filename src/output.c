@@ -18,7 +18,7 @@ void output_daily_reps () {
 	}
 }
 
-int output_day_schedule (day_schedule* ds) {
+int output_day_schedule (day_schedule* ds, int week) {
 	// Returns if cross training is a required part of the day's workouts.
 	int cross_training_req = 1;
 	for (int i = 0; i < MAX_WORKOUTS_PER_DAY; i++) {
@@ -26,6 +26,9 @@ int output_day_schedule (day_schedule* ds) {
 			case CROSS_TRAIN:
 				cross_training_req = 0;
 				output_cross_training(0);
+				break;
+			case PSP:
+				output_weekly_reps(week);
 				break;
 		}
 	}
@@ -37,4 +40,37 @@ void output_exercise (exercise* e, int optional) {
 	iof((optional) ? (FORMAT_ITAL | FORMAT_GRAY) : FORMAT_ITAL, "\t%s ", e->verb);
 	iof(FORMAT_ITAL | ((optional) ? FORMAT_GRAY : FORMAT_GREN), "%d ", e->quantity);
 	iof(FORMAT_ITAL | ((optional) ? FORMAT_GRAY : FORMAT_BLUE), "%s\n", e->unit);
+}
+
+void output_weekly_reps (int week_number) {
+	iof(FORMAT_BOLD, STRING_HEADING, workout_name_string[PSP]);
+
+	if (--week_number > 26) week_number = 26; // 26, not 27, because arrays start at 0
+	int week_push_up_intensity = push_up_intensity[week_number];
+	int week_sit_up_intensity = sit_up_intensity[week_number];
+	int week_pull_up_intensity = pull_up_intensity[week_number];
+
+	// Start by outputting push up sets
+	int sets = (int) roundf(zero_one_map(psp_structure, push_ups_ri[week_push_up_intensity].minsets,
+		push_ups_ri[week_push_up_intensity].maxsets));
+	int reps = (int) roundf(zero_one_map(psp_structure, push_ups_ri[week_push_up_intensity].minreps,
+		push_ups_ri[week_push_up_intensity].maxreps));
+	exercise e = (exercise) { VERB_DO, reps, UNIT_PUSHUP };
+	for (int i = 0; i < sets; i++) output_exercise(&e, 0);
+
+	// Sit up sets
+	sets = (int) roundf(zero_one_map(psp_structure, sit_ups_ri[week_sit_up_intensity].minsets,
+		sit_ups_ri[week_sit_up_intensity].maxsets));
+	reps = (int) roundf(zero_one_map(psp_structure, sit_ups_ri[week_sit_up_intensity].minreps,
+		sit_ups_ri[week_sit_up_intensity].maxreps));
+	e = (exercise) { VERB_DO, reps, UNIT_SITUP };
+	for (int i = 0; i < sets; i++) output_exercise(&e, 0);
+
+	// Pull up sets
+	sets = (int) roundf(zero_one_map(psp_structure, pull_ups_ri[week_pull_up_intensity].minsets,
+		pull_ups_ri[week_pull_up_intensity].maxsets));
+	reps = (int) roundf(zero_one_map(psp_structure, pull_ups_ri[week_pull_up_intensity].minreps,
+		pull_ups_ri[week_pull_up_intensity].maxreps));
+	e = (exercise) { VERB_DO, reps, UNIT_PULLUP };
+	for (int i = 0; i < sets; i++) output_exercise(&e, 0);
 }

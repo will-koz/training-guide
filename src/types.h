@@ -37,3 +37,10 @@ typedef struct {
 typedef struct {
 	day_schedule days[Sunday + 1];
 } week_schedule;
+
+typedef struct {
+	int minsets;
+	int maxsets;
+	int minreps;
+	int maxreps;
+} rep_intensity;
