@@ -33,6 +33,7 @@ int main (int argc, char** argv) {
 	int schedule_from_week = 0;
 	if (working_day.week < 26) schedule_from_week = (working_day.week % 2) ? 0 : 1;
 	else schedule_from_week = (working_day.week % 2) ? 2 : 3;
+	int swim_days = count_swim_days(&schedules[schedule_from_week]);
 	day_schedule* exact_day_schedule = &schedules[schedule_from_week].days[working_day.day];
 
 	run_dump(&working_day); // Print out information about the target day and the day of the request
