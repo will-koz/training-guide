@@ -30,12 +30,21 @@ int output_day_schedule (day_schedule* ds, int week) {
 			case PSP:
 				output_weekly_reps(week);
 				break;
+			case RUN_LI:
+				output_interval(&rl_intervals[weeki_from_weeko(week)],
+					VERB_RUN, UNIT_MILES, ds->workouts[i].type);
+				break;
 			case RUN_LSD:
 			case SWIM_LSD:
 				output_lsd(ds->workouts[i].type, ds->workouts[i].subtype, week);
 				break;
 			case RUN_SI:
-				output_interval(&rs_intervals[weeki_from_weeko(week)], VERB_SPRINT, UNIT_METERS, ds->workouts[i].type);
+				output_interval(&rs_intervals[weeki_from_weeko(week)],
+					VERB_SPRINT, UNIT_METERS, ds->workouts[i].type);
+				break;
+			case SWIM_LI:
+				output_interval(&sl_intervals[weeki_from_weeko(week)],
+					VERB_SWIM, UNIT_YARDS, ds->workouts[i].type);
 				break;
 		}
 	}

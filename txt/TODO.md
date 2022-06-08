@@ -14,10 +14,10 @@ In addition to using `grep -r TODO`:
     - [ ] LIFT
     - [x] PSP
     - [x] Repetitions
-    - [ ] RUN_LI
+    - [x] RUN_LI
     - [x] RUN_LSD
     - [x] RUN_SI
-    - [ ] SWIM_LI
+    - [x] SWIM_LI
     - [x] SWIM_LSD
     - [ ] SWIM_SI
     - [x] Warm ups / Active Recovery / Cool down
@@ -25,5 +25,6 @@ In addition to using `grep -r TODO`:
   - [ ] Colored / Styled
   - [ ] Checklist
 - [ ] UX
+  - [ ] add license
   - [ ] `--help` option
   - [ ] output recommendations from the webpage?
