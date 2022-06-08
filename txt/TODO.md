@@ -20,7 +20,10 @@ In addition to using `grep -r TODO`:
     - [ ] SWIM_LI
     - [ ] SWIM_LSD
     - [ ] SWIM_SI
-    - [ ] Warm ups / Active Recovery / Cool down
+    - [x] Warm ups / Active Recovery / Cool down
 - [ ] Format options
   - [ ] Colored / Styled
   - [ ] Checklist
+- [ ] UX
+  - [ ] `--help` option
+  - [ ] output recommendations from the webpage?

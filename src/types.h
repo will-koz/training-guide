@@ -44,3 +44,14 @@ typedef struct {
 	int minreps;
 	int maxreps;
 } rep_intensity;
+
+typedef struct {
+	float run_lsd1;
+	float run_lsd2;
+	float run_lsd3;
+	float run_wucd;
+	int swim_lsd1;
+	int swim_lsd2;
+	int swim_lsd3;
+	int swim_wucd;
+} week_distance;

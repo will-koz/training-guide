@@ -1,0 +1,31 @@
+// This is the table of the distances for run and swim LSDs, as well as the warm up and cool downs
+
+week_distance distance_table[27] = {
+	(week_distance) { 4  , 2  , 0, 10, 1600, 800 , 0   , 4000 },
+	(week_distance) { 4  , 2  , 0, 10, 1600, 800 , 0   , 4000 },
+	(week_distance) { 4.5, 2  , 0, 10, 1800, 800 , 0   , 4000 },
+	(week_distance) { 4.5, 2  , 0, 10, 1800, 800 , 0   , 4000 },
+	(week_distance) { 5  , 2.5, 0, 10, 2000, 1000, 0   , 4000 },
+	(week_distance) { 5  , 2.5, 0, 10, 2000, 1000, 0   , 4000 },
+	(week_distance) { 5.5, 2.5, 0, 10, 2200, 1000, 0   , 4000 },
+	(week_distance) { 5.5, 2.5, 0, 10, 2200, 1000, 0   , 4000 },
+	(week_distance) { 6  , 3  , 0, 10, 2400, 1200, 0   , 4000 },
+	(week_distance) { 6  , 3  , 0, 10, 2400, 1200, 0   , 4000 },
+	(week_distance) { 6.5, 3  , 0, 10, 2600, 1200, 0   , 4000 },
+	(week_distance) { 6.5, 3  , 0, 10, 2600, 1200, 0   , 4000 },
+	(week_distance) { 7  , 3.5, 0, 10, 2800, 1400, 0   , 4000 },
+	(week_distance) { 7  , 3.5, 0, 10, 2800, 1400, 0   , 4000 },
+	(week_distance) { 7.5, 3.5, 0, 10, 3000, 1400, 0   , 4000 },
+	(week_distance) { 7.5, 3.5, 0, 10, 3000, 1400, 0   , 4000 },
+	(week_distance) { 8  , 4  , 0, 10, 3200, 1600, 0   , 4000 },
+	(week_distance) { 8  , 4  , 0, 10, 3200, 1600, 0   , 4000 },
+	(week_distance) { 8.5, 4  , 0, 10, 3400, 1600, 0   , 4000 },
+	(week_distance) { 8.5, 4  , 0, 10, 3400, 1600, 0   , 4000 },
+	(week_distance) { 9  , 4.5, 0, 10, 3600, 1800, 0   , 4000 },
+	(week_distance) { 9  , 4.5, 0, 10, 3600, 1800, 0   , 4000 },
+	(week_distance) { 9.5, 4.5, 0, 10, 3800, 1800, 0   , 4000 },
+	(week_distance) { 9.5, 4.5, 0, 10, 3800, 1800, 0   , 4000 },
+	(week_distance) { 10 , 5  , 0, 10, 4000, 2000, 0   , 4000 },
+	(week_distance) { 10 , 5  , 0, 10, 4000, 2000, 0   , 4000 },
+	(week_distance) { 10 , 5  , 3, 10, 4000, 2000, 1000, 4000 }
+};

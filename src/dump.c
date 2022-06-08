@@ -13,16 +13,29 @@ void workout_schedule_dump (week_schedule schedule[], int schedule_size) {
 	}
 }
 
+int count_run_days () {
+	int run_days = 0;
+	for (int i = Monday; i <= Sunday; i++) if (is_run_day(i)) run_days++;
+	return run_days;
+}
+
 int count_swim_days (week_schedule* ws) {
 	int swim_days = 0;
-	for (int i = 0; i < Sunday + 1; i++) {
-		int swim_day = 0;
-		for (int j = 0; j < MAX_WORKOUTS_PER_DAY; j++) {
-			if (ws->days[i].workouts[j].type == SWIM_LI) swim_day = 1;
-			if (ws->days[i].workouts[j].type == SWIM_LSD) swim_day = 1;
-			if (ws->days[i].workouts[j].type == SWIM_SI) swim_day = 1;
-		}
-		if (swim_day) swim_days++;
-	}
+	for (int i = 0; i < Sunday + 1; i++) if (is_swim_day(&ws->days[i])) swim_days++;
 	return swim_days;
+}
+
+int is_run_day (int day) {
+	if (day == Saturday) return 0;
+	if (day == Sunday) return 0;
+	return 1;
+}
+
+int is_swim_day (day_schedule* ds) {
+	for (int j = 0; j < MAX_WORKOUTS_PER_DAY; j++) {
+		if (ds->workouts[j].type == SWIM_LI) return 1;
+		if (ds->workouts[j].type == SWIM_LSD) return 1;
+		if (ds->workouts[j].type == SWIM_SI) return 1;
+	}
+	return 0;
 }

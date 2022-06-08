@@ -74,3 +74,22 @@ void output_weekly_reps (int week_number) {
 	e = (exercise) { VERB_DO, reps, UNIT_PULLUP };
 	for (int i = 0; i < sets; i++) output_exercise(&e, 0);
 }
+
+void output_wucd (int run, int swim, int week_number, int is_run, int is_swim) {
+	if (!(is_run || is_swim)) return;
+	iof(FORMAT_BOLD, STRING_WUCD);
+	if (--week_number > 26) week_number = 26;
+
+	if (is_run) {
+		// If it's a week day, do some warm up running
+		float warmupdistancef = distance_table[week_number].run_wucd / run;
+		exercise e = (exercise) { VERB_RUN, warmupdistancef, UNIT_MILES };
+		output_exercise(&e, 0);
+	}
+
+	if (is_swim) {
+		int warmupdistancei = distance_table[week_number].swim_wucd / swim;
+		exercise e = (exercise) { VERB_SWIM, warmupdistancei, UNIT_YARDS };
+		output_exercise(&e, 0);
+	}
+}
