@@ -15,10 +15,10 @@ In addition to using `grep -r TODO`:
     - [x] PSP
     - [x] Repetitions
     - [ ] RUN_LI
-    - [ ] RUN_LSD
-    - [ ] RUN_SI
+    - [x] RUN_LSD
+    - [x] RUN_SI
     - [ ] SWIM_LI
-    - [ ] SWIM_LSD
+    - [x] SWIM_LSD
     - [ ] SWIM_SI
     - [x] Warm ups / Active Recovery / Cool down
 - [ ] Format options

@@ -11,7 +11,9 @@
 
 #define VERB_DO "Do"
 #define VERB_RUN "Run"
+#define VERB_SPRINT "Sprint"
 #define VERB_SWIM "Swim"
+#define UNIT_METERS "meters"
 #define UNIT_MILES "miles"
 #define UNIT_PULLUP "pull-ups"
 #define UNIT_PUSHUP "push-ups"

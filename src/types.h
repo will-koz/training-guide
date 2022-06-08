@@ -1,3 +1,4 @@
+#define MAX_INTERVAL_PER_DAY 8
 #define MAX_WORKOUTS_PER_DAY 4
 
 // If you add new week days because you use another calendar or something, remember to change conf.c
@@ -21,7 +22,7 @@ typedef struct {
 
 typedef struct {
 	char* verb;
-	int quantity;
+	float quantity;
 	char* unit;
 } exercise;
 
@@ -55,3 +56,7 @@ typedef struct {
 	int swim_lsd3;
 	int swim_wucd;
 } week_distance;
+
+typedef struct {
+	float intvl[MAX_INTERVAL_PER_DAY];
+} intervals;

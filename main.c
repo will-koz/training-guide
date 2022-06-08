@@ -8,6 +8,7 @@
 #include "src/types.h"
 
 #include "custom.c"
+#include "data/intervals.c"
 #include "data/rep-tables.c"
 #include "data/run-swim-distances.c"
 #include "data/week-schedule.c"

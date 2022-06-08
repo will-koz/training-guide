@@ -39,3 +39,8 @@ int is_swim_day (day_schedule* ds) {
 	}
 	return 0;
 }
+
+int weeki_from_weeko (int x) {
+	// Week index from week ordinal
+	return (--x > 26) ? 26 : x;
+}
