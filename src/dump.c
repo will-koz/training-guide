@@ -1,3 +1,6 @@
+// Was supposed to just be for workout_schedule_dump(), but eventually a bunch of random utility
+// functions were placed here.
+
 #include "dump.h"
 
 void workout_schedule_dump (week_schedule schedule[], int schedule_size) {
@@ -38,6 +41,11 @@ int is_swim_day (day_schedule* ds) {
 		if (ds->workouts[j].type == SWIM_SI) return 1;
 	}
 	return 0;
+}
+
+void sayandexit(char* s) {
+	printf("%s\n", s);
+	exit(0);
 }
 
 int weeki_from_weeko (int x) {

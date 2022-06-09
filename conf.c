@@ -1,4 +1,7 @@
+// remember to update --help text if you are adding a new option
 #define ARG_COLOR "--color"
+#define ARG_GUIDE "--guide"
+#define ARG_HELP "--help"
 #define ARG_LIST "--list"
 #define ARG_NOCOLOR "--no-color"
 
@@ -24,6 +27,19 @@
 #define UNIT_PUSHUP "push-ups"
 #define UNIT_SITUP "sit-ups"
 #define UNIT_YARDS "yards"
+
+char* TEXT_HELP = "\
+Training guide help:\n\
+Usage: [./]guide WEEK DAY [OPTIONS]\n\
+--color    - Print with color output (default)\n\
+--guide    - Print out some of the training guide information\n\
+--help     - See --help for details\n\
+--list     - Print out with a Checklist template at the beginning of each line\n\
+--no-color - Do not print with color output\
+";
+
+char* TEXT_GUIDE = "\
+";
 
 // For days of the week and workout names, look src/types.h too because they are tied together
 char days_of_the_week_char[] = { 'M', 'T', 'W', 'H', 'F', 'S', 'U' };

@@ -32,8 +32,15 @@ int pull_up_intensity[27] = {
 	0, 0, 0, 0, 0, 1, 1, 1, 1, 1, 2, 2, 2, 2, 2, 3, 3, 3, 3, 3, 4, 4, 4, 4, 4, 4, 4
 };
 
-// To change the schedule, go to data/week_schedule.c. There have to be exactly four schedules:
-//  - one for odd weeks before week 26
-//  - one for even weeks before week 27
-//  - one for odd weeks after week 26
-//  - one for even weeks after week 27
+/* To change the schedule, go to data/week_schedule.c. There have to be exactly four schedules:
+ *  - one for odd weeks before week 26
+ *  - one for even weeks before week 27
+ *  - one for odd weeks after week 26
+ *  - one for even weeks after week 27
+ */
+
+/* Finally, there need to be three sets of "lifting" workouts. Lifting workouts are so named because
+ * it is is generally accepted that most exercises use machines or weights, but they can be
+ * any types of exercises. For example, there is no exercise like running stairs in my opinion, but
+ * doing stairs isn't a lifting workout, even though it would go in the Lifting - Lower category.
+ */
