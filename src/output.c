@@ -57,7 +57,10 @@ int output_day_schedule (day_schedule* ds, int week) {
 
 void output_exercise (exercise* e, int optional) {
 	// iof(FORMAT_ITAL, "\t%s %d %s\n", e->verb, e->quantity, e->unit);
-	iof((optional) ? (FORMAT_ITAL | FORMAT_GRAY) : FORMAT_ITAL, "\t%s ", e->verb);
+	if (configuration_information.is_check_list) iof((optional) ?
+		(FORMAT_ITAL | FORMAT_GRAY) : FORMAT_ITAL, "\t%s", STRING_LIST);
+	else iof(0, "\t");
+	iof((optional) ? (FORMAT_ITAL | FORMAT_GRAY) : FORMAT_ITAL, "%s ", e->verb);
 	iof(FORMAT_ITAL | ((optional) ? FORMAT_GRAY : FORMAT_GREN), "%g ", e->quantity);
 	iof(FORMAT_ITAL | ((optional) ? FORMAT_GRAY : FORMAT_BLUE), "%s\n", e->unit);
 }

@@ -21,10 +21,10 @@ In addition to using `grep -r TODO`:
     - [x] SWIM_LSD
     - [x] SWIM_SI
     - [x] Warm ups / Active Recovery / Cool down
-- [ ] Format options
-  - [ ] Colored / Styled
-  - [ ] Checklist
+- [x] Format options
+  - [x] Colored / Styled (`--color`, `--no-color`)
+  - [x] Checklist (`--list`)
 - [ ] UX
-  - [ ] add license
+  - [x] add license
   - [ ] `--help` option
-  - [ ] output recommendations from the webpage?
+  - [ ] output recommendations from the webpage? (`--guide`)

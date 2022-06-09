@@ -9,18 +9,18 @@ int iof (int formatting, const char* format, ...) {
 	va_list arg;
 	int done;
 
-	if (formatting & FORMAT_BOLD) printf("\033[1m");
-	if (formatting & FORMAT_ITAL) printf("\033[3m");
-	if (formatting & FORMAT_BLUE) printf("\033[34m");
-	if (formatting & FORMAT_GREN) printf("\033[32m");
-	if (formatting & FORMAT_REDX) printf("\033[31m");
-	if (formatting & FORMAT_GRAY) printf("\033[38:5:250m");
+	if (configuration_information.has_color && (formatting & FORMAT_BOLD)) printf("\033[1m");
+	if (configuration_information.has_color && (formatting & FORMAT_ITAL)) printf("\033[3m");
+	if (configuration_information.has_color && (formatting & FORMAT_BLUE)) printf("\033[34m");
+	if (configuration_information.has_color && (formatting & FORMAT_GREN)) printf("\033[32m");
+	if (configuration_information.has_color && (formatting & FORMAT_REDX)) printf("\033[31m");
+	if (configuration_information.has_color && (formatting & FORMAT_GRAY)) printf("\033[38:5:250m");
 
 	va_start(arg, format);
 	done = vfprintf(stdout, format, arg);
 	va_end(arg);
 
-	printf("\033[0m");
+	if (configuration_information.has_color) printf("\033[0m");
 
 	return done;
 }

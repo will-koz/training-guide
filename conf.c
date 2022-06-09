@@ -1,3 +1,7 @@
+#define ARG_COLOR "--color"
+#define ARG_LIST "--list"
+#define ARG_NOCOLOR "--no-color"
+
 #define ERROR_PARSING_ARGS "There was an error parsing the arguments\n"
 
 #define IO_DATEREQUESTED "(Requested on %d-%s%d-%s%d)\n"
@@ -6,6 +10,7 @@
 #define IO_URL "https://www.sealswcc.com/training/navy-seal-swcc-physical-training-guide.html"
 
 #define STRING_HEADING "%s:\n"
+#define STRING_LIST "- [ ] "
 #define STRING_REPS "Repititions:\n"
 #define STRING_WUCD "Warm Ups / Cool downs:\n"
 
@@ -30,3 +35,13 @@ char* workout_name_string[] = {
 	"", "Cross training", "Lifting", "P/S/P", "Run long interval", "Run long slow distance",
 	"Run short interval", "Swim long interval", "Swim long slow distance", "Swim short interval"
 };
+
+struct {
+	int is_check_list;
+	int has_color;
+} configuration_information;
+
+void init_configuration () {
+	configuration_information.is_check_list = 0;
+	configuration_information.has_color = 1;
+}

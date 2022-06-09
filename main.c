@@ -25,6 +25,7 @@
 exact_day working_day;
 
 int main (int argc, char** argv) {
+	init_configuration();
 	init_schedule();
 
 	if (!parse_arguments(&working_day, argc, argv)) {

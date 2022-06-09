@@ -23,6 +23,12 @@ int parse_arguments (exact_day* target_day, int argc, char** argv) {
 	}
 
 	if (!day_found) return 0; // If no day of the week could be found, do not continue
+
+	for (int i = 2; i < argc; i++) {
+		if (strcmp(argv[i], ARG_COLOR) == 0) configuration_information.has_color = 1;
+		if (strcmp(argv[i], ARG_LIST) == 0) configuration_information.is_check_list = 1;
+		if (strcmp(argv[i], ARG_NOCOLOR) == 0) configuration_information.has_color = 0;
+	}
 }
 
 void run_dump (exact_day* target_day) {
