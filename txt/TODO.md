@@ -19,7 +19,7 @@ In addition to using `grep -r TODO`:
     - [x] RUN_SI
     - [x] SWIM_LI
     - [x] SWIM_LSD
-    - [ ] SWIM_SI
+    - [x] SWIM_SI
     - [x] Warm ups / Active Recovery / Cool down
 - [ ] Format options
   - [ ] Colored / Styled

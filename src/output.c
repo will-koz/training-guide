@@ -46,6 +46,10 @@ int output_day_schedule (day_schedule* ds, int week) {
 				output_interval(&sl_intervals[weeki_from_weeko(week)],
 					VERB_SWIM, UNIT_YARDS, ds->workouts[i].type);
 				break;
+			case SWIM_SI:
+				output_interval(&ss_intervals[weeki_from_weeko(week)],
+					VERB_SWIM, UNIT_YARDS, ds->workouts[i].type);
+				break;
 		}
 	}
 	return cross_training_req;
