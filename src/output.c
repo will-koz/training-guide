@@ -27,6 +27,9 @@ int output_day_schedule (day_schedule* ds, int week) {
 				cross_training_req = 0;
 				output_cross_training(0);
 				break;
+			case LIFT:
+				output_lift(); // TODO
+				break;
 			case PSP:
 				output_weekly_reps(week);
 				break;
@@ -73,6 +76,10 @@ void output_interval (intervals* i, char* verb, char* unit, int workoutname) {
 			output_exercise(&e, 0);
 		}
 	}
+}
+
+void output_lift () {
+	;
 }
 
 void output_lsd (int type, int subtype, int week_number) {
