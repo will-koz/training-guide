@@ -44,3 +44,8 @@ int pull_up_intensity[27] = {
  * any types of exercises. For example, there is no exercise like running stairs in my opinion, but
  * doing stairs isn't a lifting workout, even though it would go in the Lifting - Lower category.
  */
+
+exercise lift_upper_body[] = {};
+exercise lift_trunk_body[] = { // AKA Core
+};
+exercise lift_lower_body[] = {};

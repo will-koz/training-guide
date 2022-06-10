@@ -24,7 +24,10 @@ In addition to using `grep -r TODO`:
 - [x] Format options
   - [x] Colored / Styled (`--color`, `--no-color`)
   - [x] Checklist (`--list`)
-- [ ] UX
-  - [ ] add license information in README
+- [ ] User Experience
+  - [ ] README
+    - [x] Add information about license
+    - [ ] General reorganization
+    - [ ] Information about what this is / what this isn't, how to use the guide
   - [x] `--help` option
-  - [ ] output recommendations from the webpage? (`--guide`)
+  - [ ] output recommendations from the web page? (`--guide`)

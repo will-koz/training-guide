@@ -20,8 +20,13 @@ of the guide would be `./guide 7 Sunday` for the Sunday of the 7th week of the t
 also use characters from `MTWtHFSsU` format, so `./guide 7 U` would give the same output as `./guide
 7 Sunday`.
 
+![One handed pull-up](images/one-handed-pull-up.png)
+
 ## TODO
 
 TODO is kept in [txt/TODO.md](txt/TODO.md).
 
-![One handed pull-up](images/one-handed-pull-up.png)
+## License
+
+This project is licensed under the [MIT license](license.txt), except for the data outputted by
+`--guide`, which is public domain because it comes from the United States Navy.
