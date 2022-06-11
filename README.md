@@ -30,6 +30,27 @@ utilization of the guide would be `./guide 7 Sunday` for the Sunday of the 7th w
 You can also use characters from `MTWtHFSsU` format, so `./guide 7 U` would give the same output as
 `./guide 7 Sunday`.
 
+## Using
+
+**This is a reminder to reread through the values that are written in [custom.c](custom.c).** This
+is supposed to be a dynamic training guide that is tailored for each person, by that person. If you
+decide to use the guide without recompiling, there are three exercises that you might not be
+familiar with. Those are:
+- *Football suicides* come from the regular tennis suicides, which are small in comparison. On a
+tennis court, there are 5 lines. You stand at the first and run to the second, then back to the
+first, then to the third, the first, the fourth, the first, the fifth, and finally return to the
+first. A football suicide is the same thing, but using the 10 yard lines of a football field. After
+each football suicide, 1100 yards will be ran.
+- *Stair-laps*. Running up stairs is one of the best exercises for the lower body (citation needed).
+At most high schools' football fields, the arena is set up with stairs going up through the
+bleachers. One lap would be running up a stairwell, running to the next stairwell and running down
+it, running to the next stairwell and running up it and so on. Because there can be a big size
+difference between, for example Michigan stadium and the average suburbian high school stadium,
+(citation needed) this is another value in [custom.c](custom.c) that should be changed.
+- *T-pose flicks* are standing in the T-pose position and flicking your fingers for the amount of
+time specified or as long as possible. This is not complex, but if you have weak forearms or
+deltoids, it can be very hard to hold for extended periods of time.
+
 ![One handed pull-up](images/one-handed-pull-up.png)
 ![Relevant XKCD](https://imgs.xkcd.com/comics/exercise_progression.png)
 
