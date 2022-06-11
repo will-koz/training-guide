@@ -46,8 +46,9 @@ int pull_up_intensity[27] = {
  */
 
 exercise lift_upper_body[] = {
-	(exercise) { "Bicep-curl", 20, "reps" },
-	(exercise) { "Do", 20, "chin-ups" },
+	(exercise) { "Do", 10, "chin-ups" },
+	(exercise) { "Do", 10, "chin-ups" },
+	(exercise) { "Do", 10, "chin-ups" },
 	(exercise) { "Do", 25, "pike push-ups" },
 	(exercise) { "T-pose flicks", 236, "seconds" } // Thrift Shop by Macklemore & Ryan Lewis length
 };
@@ -59,7 +60,7 @@ exercise lift_trunk_body[] = { // AKA Core
 };
 exercise lift_lower_body[] = {
 	(exercise) { "Do", 50, "burpees" },
-	(exercise) { "Do", 2, "football-field suicides" },
+	(exercise) { "Do", 2, "football-suicides" },
 	(exercise) { "Lunge", 400, "meters" },
 	(exercise) { "Run", 10, "stair-laps" }
 };

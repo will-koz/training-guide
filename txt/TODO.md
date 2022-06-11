@@ -27,6 +27,7 @@ In addition to using `grep -r TODO`:
 - [ ] User Experience
   - [ ] README
     - [x] Add information about license
+    - [ ] Explain what a stair lap is and a football-suicide
     - [ ] General reorganization
     - [x] Information about what this is / what this isn't, how to use the guide
   - [x] `--help` option

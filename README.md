@@ -31,6 +31,7 @@ You can also use characters from `MTWtHFSsU` format, so `./guide 7 U` would give
 `./guide 7 Sunday`.
 
 ![One handed pull-up](images/one-handed-pull-up.png)
+![Relevant XKCD](https://imgs.xkcd.com/comics/exercise_progression.png)
 
 ## TODO
 
