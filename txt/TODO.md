@@ -24,11 +24,11 @@ In addition to using `grep -r TODO`:
 - [x] Format options
   - [x] Colored / Styled (`--color`, `--no-color`)
   - [x] Checklist (`--list`)
-- [ ] User Experience
-  - [ ] README
+- [x] User Experience
+  - [x] README
     - [x] Add information about license
     - [x] Explain what a stair lap is and a football-suicide
-    - [ ] General reorganization
+    - [x] General reorganization
     - [x] Information about what this is / what this isn't, how to use the guide
   - [x] `--help` option
   - [x] output recommendations from the web page? (`--guide`)
