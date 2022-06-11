@@ -45,7 +45,12 @@ int pull_up_intensity[27] = {
  * doing stairs isn't a lifting workout, even though it would go in the Lifting - Lower category.
  */
 
-exercise lift_upper_body[] = {};
+exercise lift_upper_body[] = {
+	(exercise) {"Plank", 520, "seconds" } // The length of Purple Rain by Prince
+};
 exercise lift_trunk_body[] = { // AKA Core
 };
 exercise lift_lower_body[] = {};
+
+// Some of these exercises come from Wikipedia's list of weight training exercises, found here:
+// https://en.wikipedia.org/wiki/List_of_weight_training_exercises#Upper_body

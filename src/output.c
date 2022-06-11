@@ -28,7 +28,7 @@ int output_day_schedule (day_schedule* ds, int week) {
 				output_cross_training(0);
 				break;
 			case LIFT:
-				output_lift(); // TODO
+				output_lift(ds->workouts[i].subtype);
 				break;
 			case PSP:
 				output_weekly_reps(week);
@@ -78,8 +78,29 @@ void output_interval (intervals* i, char* verb, char* unit, int workoutname) {
 	}
 }
 
-void output_lift () {
-	;
+void output_lift (int subtype) {
+	iof(FORMAT_BOLD, STRING_HEADING, workout_name_string[LIFT]);
+
+	// Start by printing out upper body workouts
+	if (subtype & UPPER_BODY) {
+		for (int i = 0; i < sizeof(lift_upper_body) / sizeof(exercise); i++) {
+			output_exercise(&lift_upper_body[i], 0);
+		}
+	}
+
+	// Next print out core workouts
+	if (subtype & CORE) {
+		for (int i = 0; i < sizeof(lift_trunk_body) / sizeof(exercise); i++) {
+			output_exercise(&lift_trunk_body[i], 0);
+		}
+	}
+
+	// Finally, print out lower body workouts
+	if (subtype & LOWER_BODY) {
+		for (int i = 0; i < sizeof(lift_lower_body) / sizeof(exercise); i++) {
+			output_exercise(&lift_lower_body[i], 0);
+		}
+	}
 }
 
 void output_lsd (int type, int subtype, int week_number) {
