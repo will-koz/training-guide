@@ -59,13 +59,13 @@ exercise lift_trunk_body[] = { // AKA Core
 };
 exercise lift_lower_body[] = {
 	(exercise) { "Do", 50, "burpees" },
-	(exercise) { "Do", 2, "football-field suicides" }
+	(exercise) { "Do", 2, "football-field suicides" },
 	(exercise) { "Lunge", 400, "meters" },
 	(exercise) { "Run", 10, "stair-laps" }
 };
 
 // Some of these exercises come from Wikipedia's list of weight training exercises, found here:
-// https://en.wikipedia.org/wiki/List_of_weight_training_exercises#Upper_body
+// https://en.wikipedia.org/wiki/List_of_weight_training_exercises
 
 /* Don't know where I found this, but if you have access to physical machines, here would be a list
  * of lifts that could be helpful. If you know where it comes from, let me know.

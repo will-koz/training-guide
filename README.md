@@ -2,8 +2,18 @@
 
 Found a great training guide from the Navy Seals for training. Most of the guide is just tables that
 I thought should be automated to make a seemingly curated viewing experience. The guide can be found
-at [SWCC GUIDE](https://www.sealswcc.com/training/navy-seal-swcc-physical-training-guide.html). Odd
-weeks prior to week 26 use Example 1; even weeks prior to week 27 use Example 2; odd weeks after
+at [SWCC GUIDE](https://www.sealswcc.com/training/navy-seal-swcc-physical-training-guide.html).
+
+**This is not a primary-source workout guide.** All of this data comes from the online training
+guide or is a workout that I use in my personal workout. This is not an original workout plan that
+is delivered in the form of code.
+
+Editing [custom.c](custom.c) is heavily recommended because the current values are tweaked to my
+workout. For example, I do more push ups and sit ups than is recommended by the guide, but at the
+time I found out about the guide, I would have reduced the number of push ups and sit ups I would
+have done.
+
+Odd weeks prior to week 26 use Example 1; even weeks prior to week 27 use Example 2; odd weeks after
 week 26 use Example 3; and even weeks after week 27 use Example 4.
 
 ## Building
@@ -15,10 +25,10 @@ of that week's reps. Both of these can be edited in [custom.c](custom.c).
 
 ## Running
 
-Currently, the guide is run using `./guide`, followed by the week and the day. A valid utilization
-of the guide would be `./guide 7 Sunday` for the Sunday of the 7th week of the training. You can
-also use characters from `MTWtHFSsU` format, so `./guide 7 U` would give the same output as `./guide
-7 Sunday`.
+Currently, the guide is run using `./guide`, **followed by the week and the day**. A valid
+utilization of the guide would be `./guide 7 Sunday` for the Sunday of the 7th week of the training.
+You can also use characters from `MTWtHFSsU` format, so `./guide 7 U` would give the same output as
+`./guide 7 Sunday`.
 
 ![One handed pull-up](images/one-handed-pull-up.png)
 
