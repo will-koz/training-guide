@@ -8,27 +8,45 @@ at [SWCC GUIDE](https://www.sealswcc.com/training/navy-seal-swcc-physical-traini
 guide or is a workout that I use in my personal workout. This is not an original workout plan that
 is delivered in the form of code.
 
-Editing [custom.c](custom.c) is heavily recommended because the current values are tweaked to my
-workout. For example, I do more push ups and sit ups than is recommended by the guide, but at the
-time I found out about the guide, I would have reduced the number of push ups and sit ups I would
-have done.
+Editing [custom.c](custom.c) is ~~heavily recommended~~ required because the current values are
+tweaked to my workout. For example, I do more push ups and sit ups than is recommended by the guide,
+but at the time I found out about the guide, I would have reduced the number of push ups and sit ups
+I would have done, if I followed the guide to the letter.
 
 Odd weeks prior to week 26 use Example 1; even weeks prior to week 27 use Example 2; odd weeks after
 week 26 use Example 3; and even weeks after week 27 use Example 4.
 
+## Requirements
+
+- C compiler. `gcc` is specified in the [Makefile](Makefile)
+
 ## Building
 
-The guide can be built using the command `make`. Cross training is something that should be done
-everyday, according to the guide, but does not need to be done twice a day. Reps (i.e. push ups,
-situps, and pull ups) can be done twice a day. First, as part of that day's reps, and second as part
-of that week's reps. Both of these can be edited in [custom.c](custom.c).
+- `make`
+
+After you have read through the values in [custom.c](custom.c) and made sure the values are good for
+you,
+
+the guide can be built using the command `make`.
+
+*Side Note:* Cross training is something that could be done everyday, according to the guide, but
+should not need to be done twice a day. Reps (i.e. push ups, situps, and pull ups) can be done twice
+a day. First, as part of that day's reps, and second as part of that week's reps. Both of these can
+be edited in [custom.c](custom.c). If an exercise is optional and not required, it will be gray when
+it is outputted if color output is specified.
 
 ## Running
+
+- `./guide 1 Sunday`
 
 Currently, the guide is run using `./guide`, **followed by the week and the day**. A valid
 utilization of the guide would be `./guide 7 Sunday` for the Sunday of the 7th week of the training.
 You can also use characters from `MTWtHFSsU` format, so `./guide 7 U` would give the same output as
 `./guide 7 Sunday`.
+
+To get help information or see parts from the guide, use `--help` and `--guide` respectively. You
+can use the `--color` and `--no-color` options to specify color, and `--list` to add a checklist
+prefix to each line (which could be useful if you print out that day's exercises).
 
 ## Using
 

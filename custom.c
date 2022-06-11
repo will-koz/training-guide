@@ -23,13 +23,13 @@ float psp_structure = 1.00;
 // Each week can change in intensity, and some people advance at different rates. Change each of
 // these to get the right push up, sit up, and pull up intensities for you.
 int push_up_intensity[27] = {
-	0, 0, 0, 0, 0, 1, 1, 1, 1, 1, 2, 2, 2, 2, 2, 3, 3, 3, 3, 3, 4, 4, 4, 4, 4, 4, 4
+	0, 0, 1, 1, 2, 2, 3, 3, 4, 4, 4, 4, 4, 4, 4, 4, 4, 4, 4, 4, 4, 4, 4, 4, 4, 4, 4
 };
 int sit_up_intensity[27] = {
-	0, 0, 0, 0, 0, 1, 1, 1, 1, 1, 2, 2, 2, 2, 2, 3, 3, 3, 3, 3, 4, 4, 4, 4, 4, 4, 4
+	0, 0, 1, 1, 2, 2, 3, 3, 4, 4, 4, 4, 4, 4, 4, 4, 4, 4, 4, 4, 4, 4, 4, 4, 4, 4, 4
 };
 int pull_up_intensity[27] = {
-	0, 0, 0, 0, 0, 1, 1, 1, 1, 1, 2, 2, 2, 2, 2, 3, 3, 3, 3, 3, 4, 4, 4, 4, 4, 4, 4
+	0, 0, 1, 1, 2, 2, 3, 3, 4, 4, 4, 4, 4, 4, 4, 4, 4, 4, 4, 4, 4, 4, 4, 4, 4, 4, 4
 };
 
 /* To change the schedule, go to data/week_schedule.c. There have to be exactly four schedules:
@@ -41,8 +41,9 @@ int pull_up_intensity[27] = {
 
 /* Finally, there need to be three sets of "lifting" workouts. Lifting workouts are so named because
  * it is is generally accepted that most exercises use machines or weights, but they can be
- * any types of exercises. For example, there is no exercise like running stairs in my opinion, but
- * doing stairs isn't a lifting workout, even though it would go in the Lifting - Lower category.
+ * any types of exercises that are good for training a specific muscles or specific set of muscles.
+ * For example, there is no exercise like running stairs in my opinion, but doing stairs isn't a
+ * lifting workout, even though it would go in the Lifting - Lower category.
  */
 
 exercise lift_upper_body[] = {
@@ -55,8 +56,8 @@ exercise lift_upper_body[] = {
 exercise lift_trunk_body[] = { // AKA Core
 	(exercise) { "Jump-rope", 400, "seconds" },
 	(exercise) { "Plank", 520, "seconds" }, // Purple Rain by Prince length
-	(exercise) { "Side-plank, each", 100, "seconds" },
-	(exercise) { "Superman", 100, "seconds" }
+	(exercise) { "Side-plank, each", 150, "seconds" },
+	(exercise) { "Superman", 150, "seconds" }
 };
 exercise lift_lower_body[] = {
 	(exercise) { "Do", 50, "burpees" },
