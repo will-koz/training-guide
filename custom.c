@@ -46,11 +46,67 @@ int pull_up_intensity[27] = {
  */
 
 exercise lift_upper_body[] = {
-	(exercise) {"Plank", 520, "seconds" } // The length of Purple Rain by Prince
+	(exercise) { "Bicep-curl", 20, "reps" },
+	(exercise) { "Do", 20, "chin-ups" },
+	(exercise) { "Do", 25, "pike push-ups" },
+	(exercise) { "T-pose flicks", 236, "seconds" } // Thrift Shop by Macklemore & Ryan Lewis length
 };
 exercise lift_trunk_body[] = { // AKA Core
+	(exercise) { "Jump-rope", 400, "seconds" },
+	(exercise) { "Plank", 520, "seconds" }, // Purple Rain by Prince length
+	(exercise) { "Side-plank, each", 100, "seconds" },
+	(exercise) { "Superman", 100, "seconds" }
 };
-exercise lift_lower_body[] = {};
+exercise lift_lower_body[] = {
+	(exercise) { "Do", 50, "burpees" },
+	(exercise) { "Do", 2, "football-field suicides" }
+	(exercise) { "Lunge", 400, "meters" },
+	(exercise) { "Run", 10, "stair-laps" }
+};
 
 // Some of these exercises come from Wikipedia's list of weight training exercises, found here:
 // https://en.wikipedia.org/wiki/List_of_weight_training_exercises#Upper_body
+
+/* Don't know where I found this, but if you have access to physical machines, here would be a list
+ * of lifts that could be helpful. If you know where it comes from, let me know.
+ * Chest & Triceps:
+ *   Dumbbell Bench Press: 3 x 8
+ *   Dumbbell Incline Bench Press: 3 x 8
+ *   Weighted Decline Push-Up: 2 x 12-15
+ *   Skull Crusher: 2 x 8
+ *   Cable Triceps Kickback: 2 x 10-12
+ * Legs, Shoulders, & Abs:
+ *   Barbell Front Squat: 3 x 6
+ *   Romanian Deadlift: 3 x 8
+ *   Bulgarian Split Squat: 2 x 10
+ *   Machine Leg Extension superset with Leg Curl: 2 x 12-15 (each)
+ *   Dumbbell Arnold Press: 3 x 6-8
+ *   Cable Lateral Raise: 3 x 10-12
+ *   Face Pull: 2 x 12-15
+ *   Weighted Plank: 3 x 30 seconds
+ *   Dumbbell Side Bend: 2 x 8 – 12
+ * Back & Biceps:
+ *   Barbell Row: 4 x 8
+ *   Wide-Grip Lat Pulldown: 3 x 8
+ *   Dumbbell Pullover: 2 x 12-15
+ *   Chin-Up: 2 x 12-15
+ *   Hammer Curl: 3 x 6-8
+ *   Incline Dumbbell Curl: 2 x 8-10
+ * Chest, Legs, & Abs:
+ *   Barbell Close-Grip Bench Press: 3 x 6-8
+ *   Weighted Dip: 2 x 10-12
+ *   Dumbbell Flye: 2 x 12-15
+ *   Hack Squat: 3 x 6
+ *   Single-Leg Romanian Deadlift: 3 x 10
+ *   Back Extension: 2 x 12-15
+ *   Machine Leg Extension: 2 x 12-15
+ *   Machine Calf Raise: 2 x 12-15
+ *   Hanging Leg Raise: 3 x 10
+ * Back & Arms:
+ *   Dumbbell Row: 4 x 8
+ *   Barbell High Pull: 4 x 8-10
+ *   Straight-Arm Pulldown: 2 x 12-15
+ *   Preacher Curl: 3 x 8
+ *   Cable Overhead Extension: 2 x 10-12
+ *   Cable Pressdown: 3 x 8
+ */
