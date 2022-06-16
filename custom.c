@@ -9,11 +9,12 @@ exercise crosstraining[] = {
 };
 
 exercise repititions[] = {
-	(exercise) {"Do", 150, "sit-ups"},
-	(exercise) {"Do", 100, "push-ups"},
-	(exercise) {"Do", 100, "push-ups"},
-	(exercise) {"Do", 60, "push-ups"},
-	(exercise) {"Do", 40, "push-ups"}
+	(exercise) { "Do", 150, "sit-ups" },
+	(exercise) { "Do", 20, "pull-ups" }
+	(exercise) { "Do", 100, "push-ups" },
+	(exercise) { "Do", 100, "push-ups" },
+	(exercise) { "Do", 60, "push-ups" },
+	(exercise) { "Do", 40, "push-ups" }
 };
 
 // Change this to a lower value for an easier psp workout or higher for harder.
@@ -51,7 +52,7 @@ exercise lift_upper_body[] = {
 	(exercise) { "Do", 10, "chin-ups" },
 	(exercise) { "Do", 10, "chin-ups" },
 	(exercise) { "Do", 25, "pike push-ups" },
-	(exercise) { "T-pose flicks", 236, "seconds" } // Thrift Shop by Macklemore & Ryan Lewis length
+	(exercise) { "T-pose flicks", 363, "seconds" } // Rap God by Eminem length
 };
 exercise lift_trunk_body[] = { // AKA Core
 	(exercise) { "Jump-rope", 400, "seconds" },
