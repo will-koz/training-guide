@@ -51,8 +51,7 @@ exercise lift_upper_body[] = {
 	(exercise) { "Do", 10, "chin-ups" },
 	(exercise) { "Do", 10, "chin-ups" },
 	(exercise) { "Do", 25, "pike push-ups" },
-	(exercise) { "T-pose flicks", 236, "seconds" }, // Thrift Shop by Macklemore & Ryan Lewis length
-	(exercise) { "Throw basketball", 105, "feet" } // idk how it helps, but apparently it does
+	(exercise) { "T-pose flicks", 236, "seconds" } // Thrift Shop by Macklemore & Ryan Lewis length
 };
 exercise lift_trunk_body[] = { // AKA Core
 	(exercise) { "Jump-rope", 400, "seconds" },
