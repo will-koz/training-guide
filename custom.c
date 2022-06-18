@@ -10,7 +10,7 @@ exercise crosstraining[] = {
 
 exercise repititions[] = {
 	(exercise) { "Do", 150, "sit-ups" },
-	(exercise) { "Do", 20, "pull-ups" }
+	(exercise) { "Do", 20, "pull-ups" },
 	(exercise) { "Do", 100, "push-ups" },
 	(exercise) { "Do", 100, "push-ups" },
 	(exercise) { "Do", 60, "push-ups" },
