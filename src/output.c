@@ -2,6 +2,8 @@
 
 void output_cross_training (int optional) {
 	// Cross training is set in custom.c
+	for (int i = 0; i < configuration_information.tab_count; i++) printf("\t");
+
 	iof((optional) ? (FORMAT_BOLD | FORMAT_GRAY) : FORMAT_BOLD,
 		STRING_HEADING, workout_name_string[CROSS_TRAIN]);
 
@@ -11,6 +13,8 @@ void output_cross_training (int optional) {
 }
 
 void output_daily_reps () {
+	for (int i = 0; i < configuration_information.tab_count; i++) printf("\t");
+
 	iof(FORMAT_BOLD | FORMAT_GRAY, STRING_REPS);
 
 	for (int i = 0; i < sizeof(repititions) / sizeof(exercise); i++) {
@@ -60,6 +64,8 @@ int output_day_schedule (day_schedule* ds, int week) {
 
 void output_exercise (exercise* e, int optional) {
 	// iof(FORMAT_ITAL, "\t%s %d %s\n", e->verb, e->quantity, e->unit);
+	for (int i = 0; i < configuration_information.tab_count; i++) printf("\t");
+
 	if (configuration_information.is_check_list) iof((optional) ?
 		(FORMAT_ITAL | FORMAT_GRAY) : FORMAT_ITAL, "\t%s", STRING_LIST);
 	else iof(0, "\t");
@@ -79,6 +85,8 @@ void output_interval (intervals* i, char* verb, char* unit, int workoutname) {
 }
 
 void output_lift (int subtype) {
+	for (int i = 0; i < configuration_information.tab_count; i++) printf("\t");
+
 	iof(FORMAT_BOLD, STRING_HEADING, workout_name_string[LIFT]);
 
 	// Start by printing out upper body workouts
@@ -105,6 +113,8 @@ void output_lift (int subtype) {
 
 void output_lsd (int type, int subtype, int week_number) {
 	// Output both Swim and Run LSDs
+	for (int i = 0; i < configuration_information.tab_count; i++) printf("\t");
+
 	week_number = weeki_from_weeko(week_number);
 	int runtype = (type == RUN_LSD);
 	iof(FORMAT_BOLD, STRING_HEADING, workout_name_string[(runtype) ? RUN_LSD : SWIM_LSD]);
@@ -131,6 +141,8 @@ void output_lsd (int type, int subtype, int week_number) {
 }
 
 void output_weekly_reps (int week_number) {
+	for (int i = 0; i < configuration_information.tab_count; i++) printf("\t");
+
 	iof(FORMAT_BOLD, STRING_HEADING, workout_name_string[PSP]);
 
 	week_number = weeki_from_weeko(week_number);
@@ -165,6 +177,9 @@ void output_weekly_reps (int week_number) {
 
 void output_wucd (int run, int swim, int week_number, int is_run, int is_swim) {
 	if (!(is_run || is_swim)) return;
+
+	for (int i = 0; i < configuration_information.tab_count; i++) printf("\t");
+
 	iof(FORMAT_BOLD, STRING_WUCD);
 	week_number = weeki_from_weeko(week_number);
 

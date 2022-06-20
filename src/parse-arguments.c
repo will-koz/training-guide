@@ -35,6 +35,10 @@ int parse_arguments (exact_day* target_day, int argc, char** argv) {
 			if (strcmp(argv[i], ARG_COLOR) == 0) configuration_information.has_color = 1;
 			if (strcmp(argv[i], ARG_LIST) == 0) configuration_information.is_check_list = 1;
 			if (strcmp(argv[i], ARG_NOCOLOR) == 0) configuration_information.has_color = 0;
+			if (strcmp(argv[i], ARG_TAB) == 0) {
+				if (i + 1 < argc) configuration_information.tab_count = atoi(argv[++i]);
+				else configuration_information.tab_count = 1;
+			}
 		}
 	}
 

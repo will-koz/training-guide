@@ -56,7 +56,7 @@ exercise lift_upper_body[] = {
 };
 exercise lift_trunk_body[] = { // AKA Core
 	(exercise) { "Jump-rope", 400, "seconds" },
-	(exercise) { "Plank", 520, "seconds" }, // Purple Rain by Prince length
+	(exercise) { "Plank", 453, "seconds" }, // Blue Monday by New Order length
 	(exercise) { "Side-plank, each", 150, "seconds" },
 	(exercise) { "Superman", 150, "seconds" }
 };

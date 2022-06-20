@@ -4,6 +4,7 @@
 #define ARG_HELP "--help"
 #define ARG_LIST "--list"
 #define ARG_NOCOLOR "--no-color"
+#define ARG_TAB "--tab"
 
 #define ERROR_PARSING_ARGS "There was an error parsing the arguments\n"
 
@@ -35,7 +36,8 @@ Usage: [./]guide WEEK DAY [OPTIONS]\n\
 --guide    - Print out some of the training guide information\n\
 --help     - See --help for details\n\
 --list     - Print out with a Checklist template at the beginning of each line\n\
---no-color - Do not print with color output\
+--no-color - Do not print with color output\n\
+--tab [x]  - Print out x number of tabs or 1 if x is not specified\
 ";
 
 char* TEXT_GUIDE = "\
@@ -111,9 +113,11 @@ char* workout_name_string[] = {
 struct {
 	int is_check_list;
 	int has_color;
+	int tab_count;
 } configuration_information;
 
 void init_configuration () {
 	configuration_information.is_check_list = 0;
 	configuration_information.has_color = 1;
+	configuration_information.tab_count = 0;
 }
