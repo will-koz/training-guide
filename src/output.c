@@ -75,6 +75,7 @@ void output_exercise (exercise* e, int optional) {
 }
 
 void output_interval (intervals* i, char* verb, char* unit, int workoutname) {
+	for (int i = 0; i < configuration_information.tab_count; i++) printf("\t");
 	iof(FORMAT_BOLD, STRING_HEADING, workout_name_string[workoutname]);
 	for (int j = 0; j < MAX_INTERVAL_PER_DAY; j++) {
 		if ((*i).intvl[j]) {
